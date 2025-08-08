@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "postinstall": "prisma generate",
+    "postinstall": "npm install --legacy-peer-deps && prisma generate",
     "migrate-seed:dev": "prisma migrate dev && prisma db seed",
     "migrate-seed:prod": "prisma migrate deploy && prisma db seed"
   },
