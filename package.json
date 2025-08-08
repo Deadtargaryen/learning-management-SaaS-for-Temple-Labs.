@@ -7,7 +7,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "postinstall": "prisma generate"
+    "postinstall": "prisma generate",
+    "migrate-seed": "prisma migrate dev && prisma db seed"
+  },
+  "prisma": {
+    "seed": "ts-node ./scripts/seed.ts"
   },
   "dependencies": {
     "@clerk/nextjs": "^6.19.3",
@@ -34,9 +38,9 @@
     "lucide-react": "^0.510.0",
     "next": "^15.3.2",
     "query-string": "^8.2.0",
-    "react": "^18.3.1",
+    "react": "^19.1.0",
     "react-confetti": "^6.4.0",
-    "react-dom": "^18.3.1",
+    "react-dom": "^19.1.0",
     "react-hook-form": "^7.56.3",
     "react-hot-toast": "^2.5.2",
     "react-icons": "^4.12.0",
@@ -50,7 +54,7 @@
     "zustand": "^4.5.6"
   },
   "devDependencies": {
-    "@types/node": "^20.17.47",
+    "@types/node": "^20.19.9",
     "@types/react": "^19.1.4",
     "@types/react-dom": "^19.1.5",
     "autoprefixer": "^10.4.21",
@@ -60,9 +64,10 @@
     "postcss": "^8.5.3",
     "prettier": "^3.5.3",
     "prettier-plugin-tailwindcss": "^0.5.14",
-    "prisma": "^6.13.0",
+    "prisma": "^5.22.0",
     "tailwindcss": "^3.4.17",
-    "typescript": "^5.8.3"
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
   },
   "config": {
     "commitizen": {

@@ -1,3 +1,7 @@
+/* eslint-disable @typescript-eslint/no-require-imports */
+/* eslint-disable no-console */
+
+
 const { PrismaClient } = require('@prisma/client')
 
 const database = new PrismaClient()
