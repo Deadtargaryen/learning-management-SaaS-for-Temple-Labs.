@@ -3,12 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "prisma migrate dev && next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "postinstall": "prisma generate",
-    "migrate-seed": "prisma migrate dev && prisma db seed"
+    "migrate-seed:dev": "prisma migrate dev && prisma db seed",
+    "migrate-seed:prod": "prisma migrate deploy && prisma db seed"
   },
   "prisma": {
     "seed": "ts-node ./scripts/seed.ts"
