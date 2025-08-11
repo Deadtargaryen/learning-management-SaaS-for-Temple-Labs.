@@ -29,7 +29,7 @@ export async function POST(req: NextRequest, { params }: { params: Promise<{ cou
       {
         quantity: 1,
         price_data: {
-          currency: 'USD',
+          currency: 'NGN',
           product_data: {
             name: course.title,
             description: course.description!,
