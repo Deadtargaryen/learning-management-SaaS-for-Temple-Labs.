@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     'Create, manage, and deliver engaging online courses with our powerful LMS. Boost training, certifications, and learner success today.',
   keywords: 'LMS360, learning management system, online courses, e-learning, training software, employee training, certification platform',
   robots: 'index, follow',
-  viewport: 'width=device-width, initial-scale=1',
+  // viewport: 'width=device-width, initial-scale=1',
   openGraph: {
     title: 'LMS360 — Best Online Learning Platform for Courses & Training',
     description:
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     creator: '@YourTwitterHandle',
   },
   authors: [{ name: 'T-Labs' }],
-  themeColor: '#1a73e8',
+  // themeColor: '#1a73e8',
 }
 
 
